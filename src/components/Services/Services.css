@@ -1,0 +1,113 @@
+#services-container{
+	position: relative;
+	top:50%;
+	display: grid;
+	grid-template-columns: 20% 80%;
+	grid-template-rows: 100%;
+	width: 100%;
+	height: 48px;
+	margin:0px auto;
+}
+#services-heading{
+	border:1.5px solid white;
+	border-radius: 5px;
+	color:white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+    max-width: 150px;
+    min-width: 48px;
+    cursor: pointer;
+    z-index: 5;
+    margin-left: 16px;
+}
+.services-wrapper{
+	display: flex;
+	padding: 0px;
+	width: 100%;
+	height:100%;
+	flex-direction: column;
+	margin-left: 3px;
+	margin-top: -7px;
+	transition: all 1s;
+	animation:0.75s fade linear;
+	z-index: 1;
+}
+.service-item{
+	list-style: none;
+	font-size: 14px;
+	color: white;
+	padding:11px 10px;
+	height:48px;
+	background-color: rgba(0,0,0,0.75);
+	display: block;
+	margin-bottom: 1px;
+	width: 150px;
+}
+#service1{
+  font-weight: bolder;
+  font-size: 1em;
+  color:  #039be5;  
+}
+#service2{
+
+  font-weight: bolder;
+  font-size: 1em;
+  color:#e53935;
+}
+
+#service3{
+  font-weight: bolder;
+  font-size: 1em;
+  color: #f9a825; 
+}
+#service4{
+
+  font-weight: bolder;
+  font-size: 1em;
+  color: #43a047 ;  
+}
+
+#service5{
+  font-weight: bolder;
+  font-size: 1em;
+  color:  #263238;
+}
+@keyframes fade {
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1
+	}
+}
+.services-wrapper-none{
+	opacity: 0;
+	margin-left: -500px;
+}
+@media only screen and (min-width:900px){
+	#services-heading{
+		display: none;
+	}
+	.services-wrapper{
+		flex-direction: row;
+		opacity: 1;
+		margin: 0px;
+		width: 100%;
+	}
+	#services-container{
+		display: block;
+		position: sticky;
+		top:90%;
+		width: 90%;
+		margin: auto;
+	}
+	.service-item{
+		background-color: transparent;
+		font-size: 1.2em;
+		padding: 0px;
+		margin:0px;
+		width: 100%;
+	}
+}

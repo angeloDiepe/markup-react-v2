@@ -1,0 +1,45 @@
+#presentation{
+  position: relative;
+  top:47.5%;
+  overflow: hidden;
+  z-index: 1;
+}
+.cover-heading{
+  font-size: 2em;
+  text-shadow: 5px 5px 15px #0A79DF ;
+  color: white;
+  height: 75px;
+}
+.commander{
+  background-color: #17A2B8;;
+  border:none;
+  height: 50px;
+  width: 150px;
+  z-index: 1;
+  display: block;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin:auto;
+  cursor: pointer;
+  padding:0px;
+  transition: all 0.5s;
+}
+.commander:hover{
+  width: 160px;
+  height: 55px;
+  transition: all 0.4s;
+  box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+}
+#commander1{
+  background-color: #f9a825;
+  } 
+#commander2{
+ background-color: #039be5; 
+  }
+#commander3{
+  background-color: #e53935; 
+  }
+#commander4{
+  background-color:  #43a047 ;
+  }
