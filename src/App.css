@@ -110,8 +110,8 @@
   animation: 40s timeout infinite;
 }
 #main-footer{
- position:sticky;
- top:100%; 
+  position:absolute;
+  top:calc(100% - 24px); 
   width: 100%;
   display: flex;
   flex-wrap: wrap-reverse;
@@ -122,10 +122,6 @@
   color: rgba(255,255,255,0.5);
   height: 24px;
   align-items: center;
-}
-#webmail{
-  margin-right: 5px;
-  padding-left: 5px;
 }
 .slogan{
   animation:1.5s bounce linear infinite;
